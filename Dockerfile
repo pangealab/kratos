@@ -19,9 +19,6 @@ RUN \
   sudo mv ./aws-iam-authenticator /usr/local/bin/aws-iam-authenticator && \
   chmod +x ./aws-iam-authenticator
 
-RUN curl -L -o /usr/bin/kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.15.10/2020-02-22/bin/linux/amd64/kubectl
-RUN chmod +x /usr/bin/kubectl
-
 # Set entrypoint
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
