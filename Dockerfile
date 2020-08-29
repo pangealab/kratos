@@ -1,17 +1,18 @@
-FROM amazon/aws-cli:latest
-# FROM alpine:3.11
+FROM alpine:3.11
 
 # Kubectl version
 ENV KUBECTL_VERSION="1.14.6"
 
 # Install Tools
-# RUN apk add py-pip curl unzip
+RUN apk add py-pip curl unzip
 
 # Install AWS CLI
 # RUN \
 #   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
 #   unzip awscliv2.zip && \
 #   ./aws/install
+
+RUN pip3 install awscli
 
 # Install Kubectl
 RUN \
