@@ -12,7 +12,7 @@ RUN pip install awscli==$AWSCLI_VERSION --upgrade --user
 
 # Install Kubectl
 RUN \
-  curl -o kubectl https://amazon-eks.s3-us-west-2.amazonaws.com/1.14.6/2019-08-22/bin/linux/amd64/kubectl  && \
+  curl -o kubectl https://amazon-eks.s3-us-west-2.amazonaws.com/${KUBECTL_VERSION}/2019-08-22/bin/linux/amd64/kubectl  && \
   chmod +x ./kubectl && \
   mv ./kubectl /usr/local/bin/kubectl
 
