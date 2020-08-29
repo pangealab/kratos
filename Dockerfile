@@ -5,7 +5,7 @@ ENV KUBECTL_VERSION="1.14.6"
 ENV AWSCLI_VERSION "1.18.128"
 
 # Install Tools
-RUN apk add py-pip curl unzip
+RUN apk add py-pip curl
 
 # Install AWS CLI
 RUN pip install awscli==$AWSCLI_VERSION --upgrade --user
