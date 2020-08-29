@@ -9,7 +9,7 @@ ENV IAMAUTH_VERSION="1.14.6"
 RUN apk add py-pip curl unzip
 
 # Install AWS CLI
-RUN pip install awscli==$AWSCLI_VERSION --upgrade --user
+RUN pip install awscli==$AWSCLI_VERSION
 
 # Install Kubectl
 RUN \
