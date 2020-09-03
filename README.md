@@ -1,4 +1,4 @@
-# kratos
+![Intro](./docs/kratos.png)
 
 Interacts with kubernetes clusters calling `kubectl` commands. Integrates support for **AWS EKS**.
 
